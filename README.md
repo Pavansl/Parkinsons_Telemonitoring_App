@@ -1,4 +1,4 @@
-Parkinson’s Disease Telemonitoring Project – README
+<img width="1443" height="430" alt="image" src="https://github.com/user-attachments/assets/15ab268c-b012-4b5b-a5a6-9f7c4cbff534" />Parkinson’s Disease Telemonitoring Project – README
 ====================================================
 
 Overview
@@ -8,37 +8,35 @@ This project involves both Jupyter-based exploratory development and a fully con
 -----------------------------
 Project Structure
 -----------------------------
-
-## 📂 Project Structure
-├── Parkinsons_Disease_Notebook.ipynb   # Full Jupyter analysis
-├── Parkinsons_Disease_Notebook.py      # Exported script version
-├── Parkinsons_Disease_Notebook.html    # Rendered HTML version
-├── Deployment_Files/
-│   ├── Parkinsons_telemonitoring_app/
-│   │   ├── Dockerfile
-│   │   ├── requirements.txt
-│   │   ├── app/
-│   │   │   ├── train_model.py
-│   │   │   ├── predict.py
-│   │   │   ├── preprocessing.py
-│   │   │   ├── load_data.py
-│   │   │   ├── visual_outputs.py
-│   │   │   └── interpretation_dashboard.py
-│   │   ├── data/
-│   │   │   ├── parkinsons_updrs.data
-│   │   │   └── new_test.csv (optional)
-│   │   └── output/   # Generated after prediction
-│   │       ├── predictions.csv
-│   │       ├── shap_summary.png
-│   │       ├── shap_beeswarm.png
-│   │       ├── shap_misclassified.png
-│   │       ├── lime_explanation_1.html
-│   │       ├── lime_explanation_2.html
-│   │       └── lime_explanation_3.html
-│   ├── pull_image.bat
-│   ├── train.bat
-│   └── prediction.bat
-└── README.md
+```bash
+Parkinsons_Disease_Notebook.ipynb     # Full Jupyter analysis
+Parkinsons_Disease_Notebook.py        # Exported script version
+Parkinsons_Disease_Notebook.html      # Rendered HTML version
+Deployment_Files/
+├── Parkinsons_telemonitoring_app/    # Docker app and code base
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── app/
+│   │   ├── train_model.py
+│   │   ├── predict.py
+│   │   ├── preprocessing.py
+│   │   ├── load_data.py
+│   │   ├── visual_outputs.py
+│   │   └── interpretation_dashboard.py
+│   ├── data/
+│   │   ├── parkinsons_updrs.data
+│   │   └── new_test.csv (optional)
+│   └── output/                       # Generated after prediction
+│       ├── predictions.csv
+│       ├── shap_summary.png
+│       ├── shap_beeswarm.png
+│       ├── shap_misclassified.png
+│       ├── lime_explanation_1.html
+│       ├── lime_explanation_2.html
+│       └── lime_explanation_3.html
+├── pull_image.bat
+├── train.bat
+└── prediction.bat
 
 
 
