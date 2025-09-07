@@ -9,12 +9,12 @@ This project involves both Jupyter-based exploratory development and a fully con
 Project Structure
 -----------------------------
 
-Sakleshpur_Lingaraju_00746907/
-├── Parkinsons_Disease_Notebook.ipynb      ← Full Jupyter analysis
-├── Parkinsons_Disease_Notebook.py         ← Exported script version
-├── Parkinsons_Disease_Notebook.html       ← Rendered HTML version
+## 📂 Project Structure
+├── Parkinsons_Disease_Notebook.ipynb   # Full Jupyter analysis
+├── Parkinsons_Disease_Notebook.py      # Exported script version
+├── Parkinsons_Disease_Notebook.html    # Rendered HTML version
 ├── Deployment_Files/
-│   ├── Parkinsons_telemonitoring_app/     ← Docker app and code base
+│   ├── Parkinsons_telemonitoring_app/
 │   │   ├── Dockerfile
 │   │   ├── requirements.txt
 │   │   ├── app/
@@ -26,18 +26,20 @@ Sakleshpur_Lingaraju_00746907/
 │   │   │   └── interpretation_dashboard.py
 │   │   ├── data/
 │   │   │   ├── parkinsons_updrs.data
-│   │   │   └── new_test.csv (optional user-supplied)
-│   │   ├── output/						  # Output files created after prediction
-│   │		├── predictions.csv           # Final predictions + probabilities
-│   │		├── shap_summary.png          # SHAP global feature importance
-│   │		├── shap_beeswarm.png         # SHAP instance-level visualization
-│   │		├── shap_misclassified.png    # SHAP for misclassified test samples
-│   │		├── lime_explanation_1.html   # LIME for sample 1
-│   │		├── lime_explanation_2.html   # LIME for sample 2
-│   │		├── lime_explanation_3.html   # LIME for sample 3
-├── pull_image.bat
-├── train.bat
-├── prediction.bat
+│   │   │   └── new_test.csv (optional)
+│   │   └── output/   # Generated after prediction
+│   │       ├── predictions.csv
+│   │       ├── shap_summary.png
+│   │       ├── shap_beeswarm.png
+│   │       ├── shap_misclassified.png
+│   │       ├── lime_explanation_1.html
+│   │       ├── lime_explanation_2.html
+│   │       └── lime_explanation_3.html
+│   ├── pull_image.bat
+│   ├── train.bat
+│   └── prediction.bat
+└── README.md
+
 
 
 
