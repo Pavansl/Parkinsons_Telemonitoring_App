@@ -6,43 +6,6 @@ Overview
 This project involves both Jupyter-based exploratory development and a fully containerized deployment system for predicting Parkinson’s Disease severity using voice features. It integrates interpretable machine learning models (Logistic Regression, Random Forest, XGBoost) with SHAP and LIME for transparency. The system is built to support both academic experimentation and real-world usability.
 
 -----------------------------
-Project Structure
------------------------------
-```bash
-Parkinsons_Disease_Notebook.ipynb     # Full Jupyter analysis
-Parkinsons_Disease_Notebook.py        # Exported script version
-Parkinsons_Disease_Notebook.html      # Rendered HTML version
-Deployment_Files/
-├── Parkinsons_telemonitoring_app/    # Docker app and code base
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── app/
-│   │   ├── train_model.py
-│   │   ├── predict.py
-│   │   ├── preprocessing.py
-│   │   ├── load_data.py
-│   │   ├── visual_outputs.py
-│   │   └── interpretation_dashboard.py
-│   ├── data/
-│   │   ├── parkinsons_updrs.data
-│   │   └── new_test.csv (optional)
-│   └── output/                       # Generated after prediction
-│       ├── predictions.csv
-│       ├── shap_summary.png
-│       ├── shap_beeswarm.png
-│       ├── shap_misclassified.png
-│       ├── lime_explanation_1.html
-│       ├── lime_explanation_2.html
-│       └── lime_explanation_3.html
-├── pull_image.bat
-├── train.bat
-└── prediction.bat
-
-
-
-
-
------------------------------
 Jupyter Notebook Development
 -----------------------------
 The file `Parkinsons_Disease_Notebook.ipynb` includes:
@@ -89,6 +52,45 @@ Important Notes for deployment
 	`data/new_test.csv` must be present and full path must be specified while running prediction.
 - Results will be saved to `output/predictions.csv`
 - SHAP and LIME outputs will be displayed in the Streamlit dashboard.
+
+-----------------------------
+Project Structure
+-----------------------------
+```bash
+Parkinsons_Disease_Notebook.ipynb     # Full Jupyter analysis
+Parkinsons_Disease_Notebook.py        # Exported script version
+Parkinsons_Disease_Notebook.html      # Rendered HTML version
+Deployment_Files/
+├── Parkinsons_telemonitoring_app/    # Docker app and code base
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── app/
+│   │   ├── train_model.py
+│   │   ├── predict.py
+│   │   ├── preprocessing.py
+│   │   ├── load_data.py
+│   │   ├── visual_outputs.py
+│   │   └── interpretation_dashboard.py
+│   ├── data/
+│   │   ├── parkinsons_updrs.data
+│   │   └── new_test.csv (optional)
+│   └── output/                       # Generated after prediction
+│       ├── predictions.csv
+│       ├── shap_summary.png
+│       ├── shap_beeswarm.png
+│       ├── shap_misclassified.png
+│       ├── lime_explanation_1.html
+│       ├── lime_explanation_2.html
+│       └── lime_explanation_3.html
+├── pull_image.bat
+├── train.bat
+└── prediction.bat
+
+
+
+
+
+
 
 -----------------------------
 Credits
