@@ -1,6 +1,3 @@
-<img width="1443" height="430" alt="image" src="https://github.com/user-attachments/assets/15ab268c-b012-4b5b-a5a6-9f7c4cbff534" />Parkinson’s Disease Telemonitoring Project – README
-====================================================
-
 Overview
 --------
 This project involves both Jupyter-based exploratory development and a fully containerized deployment system for predicting Parkinson’s Disease severity using voice features. It integrates interpretable machine learning models (Logistic Regression, Random Forest, XGBoost) with SHAP and LIME for transparency. The system is built to support both academic experimentation and real-world usability.
